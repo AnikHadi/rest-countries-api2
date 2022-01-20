@@ -1,0 +1,104 @@
+* {
+    font-family: 'Patrick Hand', cursive;
+}
+#countries {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.country-div {
+    margin: 0.5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0.2rem 0.2rem 1rem lightgreen;
+    background-color: lightgray;
+}
+aside{
+    width: 30%;
+    float: right;
+    font-style: italic;
+}
+
+aside img{
+    width: 100%;
+}
+.country-name{
+    color: #d34228;
+}
+.capital-name{
+    color: #15a540;
+}
+.button{
+    border: none;
+    background-image: linear-gradient(#eb01a546, #d136318e );
+    border-radius: 1rem;
+    cursor: pointer;
+    float: right;
+}
+.button:active {
+    background-image: linear-gradient(#01b4eb48, #12b16e8e );
+    width: 4rem;
+    height: 1.2rem;
+}
+.country-count {
+    color: #678824;
+}
+.area-name{
+    color: #f04729;
+}
+.population-name {
+    color: rgb(160, 22, 75);
+}
+
+
+/* Popup container */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  /* The actual popup (appears on top) */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 300px;
+    background-color: #555;
+    color: #fff;
+    /* text-align: center; */
+    border-radius: 20px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
